@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styling */
+body {
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Location-specific themes */
+body.entrance {
+    background: linear-gradient(135deg, #2c1810 0%, #8b4513 100%);
+    color: #d4af37;
+}
+
+body.watcher {
+    background: linear-gradient(135deg, #0a0a2e 0%, #16213e 100%);
+    color: #87ceeb;
+}
+
+body.moria {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #d4af37;
+}
+
+body.balrog {
+    background: linear-gradient(135deg, #2d1b1b 0%, #8b0000 100%);
+    color: #ff6b6b;
+}
+
+body.balins-tomb {
+    background: linear-gradient(135deg, #1a2d1a 0%, #2d4a2d 100%);
+    color: #90ee90;
+}
+
+body.orcs {
+    background: linear-gradient(135deg, #2d1a1a 0%, #4a2d2d 100%);
+    color: #ffa500;
+}
+
+body.bridge {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #87ceeb;
+}
+
+/* Main page specific styling */
+body.entrance .card {
+    max-width: 600px;
+    padding: 3rem;
+}
+
+body.entrance h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+body.entrance img {
+    max-width: 500px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+}
+
+body.entrance .actions a {
+    font-size: 1.3rem;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #d4af37, #f4d03f);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Base card styling */
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Location-specific card themes */
+body.entrance .card {
+    border-color: #d4af37;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+}
+
+body.watcher .card {
+    border-color: #87ceeb;
+    box-shadow: 0 0 30px rgba(135, 206, 235, 0.3);
+}
+
+body.moria .card {
+    border-color: #d4af37;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+}
+
+body.balrog .card {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 30px rgba(255, 107, 107, 0.3);
+}
+
+body.balins-tomb .card {
+    border-color: #90ee90;
+    box-shadow: 0 0 30px rgba(144, 238, 144, 0.3);
+}
+
+body.orcs .card {
+    border-color: #ffa500;
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.3);
+}
+
+body.bridge .card {
+    border-color: #87ceeb;
+    box-shadow: 0 0 30px rgba(135, 206, 235, 0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    border: 2px solid #d4af37;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Default link styling - you can experiment with this */
+a {
+    display: inline-block;
+    background: linear-gradient(45deg, #d4af37, #f4d03f);
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    background: linear-gradient(45deg, #f4d03f, #d4af37);
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    line-height: 1.4;
+}
+
+.password-section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    border: 2px solid #d4af37;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #d4af37;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #f4d03f;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+input[type="text"]::placeholder {
+    color: rgba(212, 175, 55, 0.6);
+}
+
+button {
+    background: linear-gradient(45deg, #d4af37, #f4d03f);
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    background: linear-gradient(45deg, #f4d03f, #d4af37);
+}
+
+/* Default actions container - you can experiment with this */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.actions a {
+    margin: 0.5rem 0;
+}
+
+img[src$=".gif"] {
+    max-width: 500px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.actions.three-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 2rem auto 0;
+}
+
+.actions.three-choices a {
+    width: 100%;
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #2c1810, #8b4513);
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.actions.three-choices a:hover {
+    background: linear-gradient(45deg, #8b4513, #d4af37);
+    color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+    border-color: #f4d03f;
+}
