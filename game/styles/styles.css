@@ -34,7 +34,7 @@ body.balrog {
     color: #ff6b6b;
 }
 
-body.balins-tomb {
+body.tomb {
     background: linear-gradient(135deg, #1a2d1a 0%, #2d4a2d 100%);
     color: #90ee90;
 }
@@ -118,7 +118,7 @@ body.balrog strong {
     color: #eea845;
 }
 
-body.balins-tomb .card {
+body.tomb .card {
     border-color: #90ee90;
     box-shadow: 0 0 30px rgba(144, 238, 144, 0.3);
 }
