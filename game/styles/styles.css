@@ -34,7 +34,7 @@ body.balrog {
     color: #ff6b6b;
 }
 
-body.balins-tomb {
+body.tomb {
     background: linear-gradient(135deg, #1a2d1a 0%, #2d4a2d 100%);
     color: #90ee90;
 }
@@ -108,7 +108,17 @@ body.balrog .card {
     box-shadow: 0 0 30px rgba(255, 107, 107, 0.3);
 }
 
-body.balins-tomb .card {
+body.balrog hr {
+    border-color: #d4af37;
+    margin: 2vw 0
+}
+
+body.balrog strong {
+    font-style: normal;
+    color: #eea845;
+}
+
+body.tomb .card {
     border-color: #90ee90;
     box-shadow: 0 0 30px rgba(144, 238, 144, 0.3);
 }
@@ -210,6 +220,7 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    margin: 2vh 2vw
 }
 
 button:hover {
