@@ -49,6 +49,11 @@ body.bridge {
     color: #87ceeb;
 }
 
+body.exit {
+    background: linear-gradient(135deg, #2d4a2d 0%, #1a3d1a 100%);
+    color: #90ee90;
+}
+
 /* Main page specific styling */
 body.entrance .card {
     max-width: 600px;
@@ -131,6 +136,11 @@ body.orcs .card {
 body.bridge .card {
     border-color: #87ceeb;
     box-shadow: 0 0 30px rgba(135, 206, 235, 0.3);
+}
+
+body.exit .card {
+    border-color: #90ee90;
+    box-shadow: 0 0 30px rgba(144, 238, 144, 0.3);
 }
 
 h1 {
